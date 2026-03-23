@@ -1,11 +1,7 @@
-import Message from "./components/message";
+import Dudes from "./components/dudes";
 
 function App() {
-  return ( 
-  <>
-    <h1>React app</h1>
-    <Message/>
-  </> 
-)
+  return <Dudes/>
 }
+
 export default App;
