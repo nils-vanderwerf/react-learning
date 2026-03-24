@@ -3,10 +3,10 @@ function Languages() {
 
   return (
     <>
-      <h1>Programming Languages</h1>
+      <h1 className="text-2xl font-extrabold">Programming Languages</h1>
       <ul>
         {languages.map((language, index) => (
-        <li key={index}>{language}</li>
+        <li key={index} onClick={() => alert(`Language is ${language}`)}>{language}</li>
         ))}
       </ul>
 
