@@ -1,12 +1,15 @@
 function Languages() {
-  let languages = ["Javascript", "PHP", "Python", "Swift"]
+  const languages = ["Javascript", "PHP", "Python", "Swift"]
 
+  const handleClick = (language) => {
+    alert(`I am clicked! The language clicked was ${language}`)
+  }
   return (
     <>
       <h1 className="text-2xl font-extrabold">Programming Languages</h1>
       <ul>
         {languages.map((language, index) => (
-        <li key={index} onClick={() => alert(`Language is ${language}`)}>{language}</li>
+        <li key={index} onClick={() => handleClick(language)}>{language}</li>
         ))}
       </ul>
 
